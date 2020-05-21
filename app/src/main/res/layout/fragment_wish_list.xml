@@ -1,0 +1,196 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ExploreNadorActivity">
+    <FrameLayout
+        android:id="@+id/fragment_wish_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:orientation="horizontal"
+                    android:padding="0.1sp"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="30dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        tools:ignore="NestedWeights">
+
+                        <SearchView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="30dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        tools:ignore="RtlHardcoded">
+
+                        <ImageButton
+                            android:id="@+id/imgBtnMenu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:background="@android:color/transparent"
+                            app:srcCompat="@drawable/ic_menu"
+                            tools:ignore="InefficientWeight,VectorDrawableCompat"
+                            android:contentDescription="@string/todo" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="0"
+                    android:orientation="vertical">
+
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#FF909090" />
+                </LinearLayout>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/header"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginBottom="26dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/drink_button"
+                            android:layout_width="78dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/custom_blue_button"
+                            android:drawableLeft="@drawable/ic_drink"
+                            android:fontFamily="@font/segoe_print_fonts"
+                            android:paddingLeft="2dp"
+                            android:text="@string/drink"
+                            android:textAllCaps="false"
+                            android:textColor="#FFF"
+                            android:textSize="10sp"
+                            android:drawableStart="@drawable/ic_drink"
+                            android:paddingStart="2dp"
+                            tools:ignore="ButtonStyle,RtlSymmetry,SmallSp,SpUsage" />
+
+                        <Button
+                            android:id="@+id/eat_button"
+                            android:layout_width="78dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/border_blue_button"
+                            android:drawableLeft="@drawable/ic_eat"
+                            android:fontFamily="@font/segoe_print_fonts"
+                            android:paddingLeft="2dp"
+                            android:text="@string/eat"
+                            android:textAllCaps="false"
+                            android:textColor="@color/blue_color"
+                            android:textSize="10sp"
+                            tools:ignore="ButtonStyle,RtlSymmetry,SmallSp,SpUsage"
+                            android:paddingStart="2dp"
+                            android:drawableStart="@drawable/ic_eat" />
+
+                        <Button
+                            android:id="@+id/salad_button"
+                            android:layout_width="78dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/border_blue_button"
+                            android:drawableLeft="@drawable/ic_visit"
+                            android:fontFamily="@font/segoe_print_fonts"
+                            android:padding="2dp"
+                            android:text="@string/visit"
+                            android:textAllCaps="false"
+                            android:textColor="@color/blue_color"
+                            android:textSize="10sp"
+                            tools:ignore="ButtonStyle,SmallSp"
+                            android:drawableStart="@drawable/ic_visit" />
+
+                        <Button
+                            android:id="@+id/meat_button"
+                            android:layout_width="78dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/border_blue_button"
+                            android:drawableLeft="@drawable/ic_sleep"
+                            android:fontFamily="@font/segoe_print_fonts"
+                            android:padding="2dp"
+                            android:text="@string/sleep"
+                            android:textAllCaps="false"
+                            android:textColor="@color/blue_color"
+                            android:textSize="10sp"
+                            android:drawableStart="@drawable/ic_sleep"
+                            tools:ignore="ButtonStyle,SmallSp" />
+
+                        <Button
+                            android:id="@+id/fries_button"
+                            android:layout_width="78dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/border_blue_button"
+                            android:drawableLeft="@drawable/ic_travel"
+                            android:fontFamily="@font/segoe_print_fonts"
+                            android:paddingLeft="2dp"
+                            android:text="@string/travel"
+                            android:textAllCaps="false"
+                            android:textColor="@color/blue_color"
+                            android:textSize="10sp"
+                            android:drawableStart="@drawable/ic_travel"
+                            android:paddingStart="2dp"
+                            tools:ignore="ButtonStyle,RtlSymmetry,SmallSp" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wish_list"
+                    android:textSize="32sp"
+                    android:textColor="@color/blue_color"
+                    android:gravity="center">
+
+                </TextView>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</RelativeLayout>

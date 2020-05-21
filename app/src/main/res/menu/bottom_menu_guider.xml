@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_explore"
+        android:icon="@drawable/icon_explore"
+        android:title="@string/lbl_explore"
+        android:checked="true"
+        />
+
+    <item android:id="@+id/nav_map"
+        android:icon="@drawable/icon_map"
+        android:title="@string/lbl_map"/>
+
+    <item android:id="@+id/nav_wish_list"
+        android:icon="@drawable/icon_wish_list"
+        android:title="@string/lbl_wish_list"/>
+
+    <item android:id="@+id/nav_plans"
+        android:icon="@drawable/icon_plans"
+        android:title="@string/lbl_plans"/>
+</menu>
