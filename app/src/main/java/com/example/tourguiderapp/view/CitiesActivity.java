@@ -1,10 +1,5 @@
 package com.example.tourguiderapp.view;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -13,6 +8,11 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.example.tourguiderapp.R;
 import com.google.android.material.navigation.NavigationView;
@@ -34,7 +34,7 @@ public class CitiesActivity extends AppCompatActivity implements NavigationView.
 
         drawerLayout=findViewById(R.id.drawer_layout);
         navigationView=findViewById(R.id.nav_view);
-        menuIcon = findViewById(R.id.menu_icon);
+        menuIcon = findViewById(R.id.imgBtnMenu);
         contentView = findViewById(R.id.content);
         navigationDrawer();
     }

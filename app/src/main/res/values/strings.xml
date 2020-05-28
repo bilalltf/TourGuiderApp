@@ -54,4 +54,5 @@
     <string name="travel">To Travel</string>
     <string name="explore">Explore</string>
     <string name="map">MAP</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

@@ -8,6 +8,7 @@
     android:fitsSystemWindows="true"
     tools:context=".view.CitiesActivity"
     tools:openDrawer="start"
+    android:background="@color/main_color"
     >
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
@@ -18,328 +19,342 @@
         app:menu="@menu/main_menu"
         />
 
-    <LinearLayout
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="170dp"
-        android:orientation="vertical">
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="0dp"
-            tools:ignore="UselessParent">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:ignore="ScrollViewSize">
-
-
-                <LinearLayout
-                    android:id="@+id/linearLayout"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:orientation="horizontal"
-                    android:padding="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0">
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="10dp"
-                        android:layout_weight="1">
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <TextView
-                                android:id="@+id/textView3"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/imgBtnNador"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="10dp"
-                                android:text="@string/nador"
-                                android:textSize="24sp"
-                                app:fontFamily="@font/baloo" />
-
-                            <ImageButton
-                                android:id="@+id/imgBtnNador"
-                                android:layout_width="150dp"
-                                android:layout_height="130dp"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="15dp"
-                                android:contentDescription="@string/todo" />
-                        </RelativeLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="10dp"
-                        android:layout_weight="1">
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <TextView
-                                android:id="@+id/textView4"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/imgBtnSaidia"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="10dp"
-                                android:text="@string/saidia"
-                                android:textSize="24sp"
-                                app:fontFamily="@font/baloo" />
-
-                            <ImageButton
-                                android:id="@+id/imgBtnSaidia"
-                                android:layout_width="150dp"
-                                android:layout_height="130dp"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="15dp"
-                                android:contentDescription="@string/todo" />
-                        </RelativeLayout>
-                    </androidx.cardview.widget.CardView>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/linearLayout2"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="10dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="10dp"
-                        android:layout_weight="1">
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <TextView
-                                android:id="@+id/textView6"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/imgBtnTanger"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="10dp"
-                                android:text="@string/tanger"
-                                android:textSize="24sp"
-                                app:fontFamily="@font/baloo" />
-
-                            <ImageButton
-                                android:id="@+id/imgBtnTanger"
-                                android:layout_width="150dp"
-                                android:layout_height="130dp"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="15dp"
-                                android:contentDescription="@string/todo" />
-                        </RelativeLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="10dp"
-                        android:layout_weight="1">
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <TextView
-                                android:id="@+id/textView7"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/imgBtnKesh"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="10dp"
-                                android:text="@string/marrakesh"
-                                android:textSize="24sp"
-                                app:fontFamily="@font/baloo" />
-
-                            <ImageButton
-                                android:id="@+id/imgBtnKesh"
-                                android:layout_width="150dp"
-                                android:layout_height="130dp"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="15dp"
-                                android:contentDescription="@string/todo" />
-                        </RelativeLayout>
-                    </androidx.cardview.widget.CardView>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="10dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="10dp"
-                        android:layout_weight="1">
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <TextView
-                                android:id="@+id/textView8"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/imgBtnTetouane"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="10dp"
-                                android:text="@string/tetouane"
-                                android:textSize="24sp"
-                                app:fontFamily="@font/baloo" />
-
-                            <ImageButton
-                                android:id="@+id/imgBtnTetouane"
-                                android:layout_width="150dp"
-                                android:layout_height="130dp"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="15dp"
-
-                                tools:ignore="VectorDrawableCompat"
-                                android:contentDescription="@string/todo" />
-                        </RelativeLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="10dp"
-                        android:layout_weight="1">
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <TextView
-                                android:id="@+id/textView9"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/imgBtnElhouciema"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="10dp"
-                                android:text="@string/elhouciema"
-                                android:textSize="24sp"
-                                app:fontFamily="@font/baloo" />
-
-                            <ImageButton
-                                android:id="@+id/imgBtnElhouciema"
-                                android:layout_width="150dp"
-                                android:layout_height="130dp"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="15dp"
-
-                                tools:ignore="VectorDrawableCompat"
-                                android:contentDescription="@string/todo" />
-                        </RelativeLayout>
-                    </androidx.cardview.widget.CardView>
-                </LinearLayout>
-
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-        </ScrollView>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_marginTop="60dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginEnd="16dp">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="398dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="16dp"
-
-            android:text="@string/tour_guider_menu"
-            android:textSize="30sp"
-            app:fontFamily="@font/baloo" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="394dp"
-            android:layout_height="31dp"
-            android:layout_marginStart="16dp"
-
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="5dp"
-
-            android:text="@string/start_your_journey" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/content"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-
-        android:orientation="horizontal">
+        android:layout_height="match_parent">
 
         <RelativeLayout
+
+            android:id="@+id/bar"
             android:layout_width="match_parent"
-            android:layout_height="57dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            tools:ignore="UselessParent">
+            android:layout_height="160dp"
+
+            >
 
             <ImageView
-                android:id="@+id/menu_icon"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main_color" />
+
+            <ImageView
+                android:id="@+id/imgBtnMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:contentDescription="TODO"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_main_menu"
+                tools:ignore="VectorDrawableCompat" />
+
+            <SearchView
+                android:id="@+id/cities_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
-                android:layout_alignParentBottom="true"
-
                 android:layout_marginLeft="0dp"
-                android:layout_marginTop="8.5dp"
-                android:layout_marginBottom="8.5dp"
-                android:contentDescription="@string/todo"
-                android:src="@drawable/ic_menu"
+                android:layout_marginTop="26dp"
+                android:searchIcon="@drawable/ic_search" />
 
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="17dp"
-                tools:layout_editor_absoluteY="20dp"
-                android:layout_marginStart="0dp" />
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cities_search"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/baloo"
+                android:text="@string/tour_guider"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView16"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/start_your_journey"
+                android:textColor="@color/white" />
 
         </RelativeLayout>
 
-    </LinearLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@id/bar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="0dp"
+
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/app_shape">
+
+            <ScrollView
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="575dp"
+                android:layout_alignParentTop="true"
+
+                android:layout_marginTop="25dp"
+                android:background="#ffffff">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="20dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/imgBtnNador"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Nador"
+                                    android:textSize="24sp"
+                                    app:fontFamily="@font/baloo" />
+
+                                <ImageView
+                                    android:id="@+id/imgBtnNador"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="125dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/nador" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="20dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/imgBtnSaidia"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Saidia"
+                                    android:textSize="24sp"
+                                    app:fontFamily="@font/baloo" />
+
+                                <ImageView
+                                    android:id="@+id/imgBtnSaidia"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="125dp"
+                                    android:scaleType="centerCrop" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="20dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/imgBtnTanger"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Tanger"
+                                    android:textSize="24sp"
+                                    app:fontFamily="@font/baloo" />
+
+                                <ImageView
+                                    android:id="@+id/imgBtnTanger"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="125dp"
+                                    android:scaleType="centerCrop" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="20dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/imgBtnKesh"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Marrakesh"
+                                    android:textSize="24sp"
+                                    app:fontFamily="@font/baloo" />
+
+                                <ImageView
+                                    android:id="@+id/imgBtnKesh"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="125dp"
+                                    android:scaleType="centerCrop" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="20dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/imgBtnTetouane"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Tetouane"
+                                    android:textSize="24sp"
+                                    app:fontFamily="@font/baloo" />
+
+                                <ImageView
+                                    android:id="@+id/imgBtnTetouane"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="125dp"
+                                    android:scaleType="centerCrop"
+
+                                    tools:ignore="VectorDrawableCompat" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="20dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/imgBtnElhouciema"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Elhouciema"
+                                    android:textSize="24sp"
+                                    app:fontFamily="@font/baloo" />
+
+                                <ImageView
+                                    android:id="@+id/imgBtnElhouciema"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="125dp"
+                                    android:scaleType="centerCrop"
+
+                                    tools:ignore="VectorDrawableCompat" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
 
 
 </androidx.drawerlayout.widget.DrawerLayout>
