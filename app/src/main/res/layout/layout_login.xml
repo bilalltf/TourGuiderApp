@@ -24,6 +24,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/loginViewsMargin"
             android:gravity="center"
+            android:textColor="@color/main_color"
             android:text="@string/welcome_back"
             android:textSize="20sp" />
 
@@ -44,6 +45,7 @@
                 style="@style/modifiedEditText"
                 android:drawableLeft="@drawable/ic_mail"
                 android:hint="@string/email_hint"
+                android:background="@drawable/edit_text_bk"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
                 android:drawableStart="@drawable/ic_mail"
@@ -54,13 +56,12 @@
             android:id="@+id/textInputPassword"
             style="@style/parent"
             android:layout_marginTop="@dimen/loginViewsMargin"
-            android:drawableLeft="@drawable/ic_action_lock"
-            app:passwordToggleEnabled="true"
-            android:drawableStart="@drawable/ic_action_lock">
+            app:passwordToggleEnabled="true">
 
             <EditText
                 android:id="@+id/editTextPassword"
                 style="@style/modifiedEditText"
+                android:background="@drawable/edit_text_bk"
                 android:drawableStart="@drawable/ic_action_lock"
                 android:drawableLeft="@drawable/ic_action_lock"
                 android:hint="@string/password_hint"
@@ -78,7 +79,7 @@
             android:layout_marginTop="10dp"
             android:checked="false"
             android:text="@string/remember_me"
-            android:textColor="@color/primaryTextColor"
+            android:textColor="@color/mainGray"
             android:textColorHighlight="#8BC34A"
             android:textColorLink="#8BC34A"
             android:textSize="@dimen/newsMoreTextSize"
@@ -87,6 +88,8 @@
         <Button
             android:id="@+id/btnLogin"
             style="@style/loginButton"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/loginViewsMargin"
             android:text="@string/btn_login" />
@@ -98,7 +101,7 @@
             android:onClick="clickSingUp"
             android:text="@string/login_sign_up_hint"
             android:textAlignment="center"
-            android:textColor="@color/primaryTextColor"
+            android:textColor="@color/main_color"
             android:textStyle="bold" />
 
 
@@ -109,7 +112,7 @@
             android:layout_marginTop="10dp"
             android:onClick="viewForgotPassword"
             android:text="@string/txtPassForgot"
-            android:textColor="@color/primaryTextColor" />
+            android:textColor="@color/main_color" />
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

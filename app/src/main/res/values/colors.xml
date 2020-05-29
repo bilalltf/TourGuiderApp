@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorPrimary">#1D2832</color>
+    <color name="colorPrimaryDark">#1D2832</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="whiteTextColor">#fff</color>
     <color name="primaryTextColor">#00a5ff</color>
     <color name="loginBkColor">#f0f0f0</color>
     <color name="whiteCardColor">#fff</color>
     <color name="white">#ffffff</color>
-    <color name="main_color">#66c9d6</color>
-    <color name="mainGray">#9C9C9C</color>
+    <color name="main_color">#47a0af</color>
+    <color name="mainGray">#2f5d66</color>
     <color name="background_white_color">#FFFFFF</color>
     <color name="background_shadow_border">#707070</color>
     <color name="blue_color">#9ECDF8</color>

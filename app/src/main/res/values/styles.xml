@@ -61,13 +61,13 @@
     </style>
 
     <style name="CalenderViewCustom" parent="Theme.AppCompat">
-        <item name="colorAccent">@color/yellow</item>
+        <item name="colorAccent">@color/mainGray</item>
         <item name="colorPrimary">@color/white</item>
     </style>
 
     <style name="CalenderViewDateCustomText" parent="android:TextAppearance.DeviceDefault.Small">
         <item name="android:textColor">@color/white</item>
-        <item name="android:weekNumberColor">@color/yellow</item>
+        <item name="android:weekNumberColor">@color/mainGray</item>
     </style>
 
     <style name="CalenderViewWeekCustomText" parent="android:TextAppearance.DeviceDefault.Small">

@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <gradient
-        android:angle="45"
+        android:angle="225"
         android:centerX="35%"
-        android:startColor="#408bff"
-        android:endColor="#79EBFD"
-        android:type="linear"
-        />
-    <corners android:bottomLeftRadius="25dp"
-        android:topRightRadius="25dp"
-        android:topLeftRadius="25dp"
-        android:bottomRightRadius="25dp"
-        />
+        android:type="linear" />
+    <solid android:color="@color/mainGray" />
+    <corners android:radius="20dp" />
     <size
         android:width="182dp"
-        android:height="54dp"
-        />
+        android:height="45dp" />
 </shape>

@@ -5,7 +5,7 @@
     android:viewportWidth="145.62"
     android:viewportHeight="30">
     <path
-        android:fillColor="#66c9d6"
+        android:fillColor="@color/main_color"
         android:pathData="M0,0.001s26.584,0.842 42.337,13.532 34.294,24.921 52.485,8.658 35.493,-22.262 49.878,-22.19S0,0.001 0,0.001Z"
         tools:ignore="VectorRaster" />
     <path

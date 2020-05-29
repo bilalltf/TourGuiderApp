@@ -96,11 +96,11 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
-                android:background="#044fab"
+                android:background="@color/mainGray"
                 android:minWidth="300dp"
                 android:text="@string/sing_in"
                 android:textAllCaps="false"
-                android:textColor="#fff" />
+                android:textColor="@color/white" />
 
             <Button
                 android:id="@+id/btnRegister"
@@ -113,7 +113,7 @@
                 android:minWidth="300dp"
                 android:text="@string/create_account"
                 android:textAllCaps="false"
-                android:textColor="#fff"/>
+                android:textColor="@color/white" />
 
             <LinearLayout
                 android:layout_width="match_parent"
