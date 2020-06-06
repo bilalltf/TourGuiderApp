@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.ChooseActivity"
-    android:background="@drawable/background_travel">
+    android:background="@drawable/start_bk">
 
 
     <LinearLayout
@@ -24,27 +24,16 @@
             android:gravity="center_horizontal|center_vertical"
             android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/btnBackRegister"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:layout_gravity="left"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_weight="0"
-                android:background="@drawable/ic_action_arrow"
-                android:onClick="clickExit"
-                tools:ignore="NestedWeights,RtlHardcoded"
-                android:contentDescription="@string/todo" />
 
             <TextView
                 android:id="@+id/textView8"
                 android:layout_width="250dp"
                 android:layout_height="40dp"
                 android:layout_weight="1"
+                android:fontFamily="@font/open_sans_bold"
                 android:gravity="center"
                 android:text="@string/titre_app"
-                android:textColor="#707070"
+                android:textColor="@color/mainGray"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
@@ -63,19 +52,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
+                android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="15dp"
+                android:layout_marginEnd="55dp"
                 android:layout_marginRight="55dp"
                 android:fitsSystemWindows="false"
                 android:fontFamily="casual"
                 android:freezesText="false"
                 android:gravity="left"
                 android:text="@string/describe"
-                android:textColor="#E0F2F1"
+                android:textColor="@color/whiteTextColor"
                 android:textSize="10sp"
                 android:textStyle="normal|bold"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="55dp"
                 tools:ignore="RtlHardcoded,SmallSp" />
 
         </LinearLayout>
@@ -98,7 +87,7 @@
                 android:layout_marginRight="20dp"
                 android:background="@color/mainGray"
                 android:minWidth="300dp"
-                android:text="@string/sing_in"
+                android:text="@string/sign_in"
                 android:textAllCaps="false"
                 android:textColor="@color/white" />
 

@@ -8,8 +8,9 @@
     android:layout_gravity="center"
     android:layout_marginTop="@dimen/loginViewsMargin"
     android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/white"
     android:elevation="5dp"
-    android:background="@color/whiteCardColor"
+    app:cardBackgroundColor="@color/white"
     app:cardCornerRadius="@dimen/loginCardRadius"
     tools:targetApi="lollipop">
 
@@ -17,16 +18,17 @@
         style="@style/linearParent"
         android:layout_height="461dp"
         android:layout_gravity="center"
-        android:padding="@dimen/loginViewsMargin">
+        android:padding="20dp">
 
         <TextView
             style="@style/headerTextPrimary"
             android:layout_gravity="center"
-            android:layout_marginTop="@dimen/loginViewsMargin"
+
+            android:layout_marginTop="10dp"
             android:gravity="center"
+            android:text="@string/sign_in"
             android:textColor="@color/main_color"
-            android:text="@string/welcome_back"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
         <TextView
             style="@style/viewParent"
@@ -43,13 +45,15 @@
             <EditText
                 android:id="@+id/editTextEmail"
                 style="@style/modifiedEditText"
-                android:drawableLeft="@drawable/ic_mail"
-                android:hint="@string/email_hint"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_gravity="center_horizontal"
+                android:autofillHints=""
                 android:background="@drawable/edit_text_bk"
-                android:inputType="textEmailAddress"
-                android:maxLines="1"
                 android:drawableStart="@drawable/ic_mail"
-                android:autofillHints="" />
+                android:drawableLeft="@drawable/ic_mail"
+                android:inputType="textEmailAddress"
+                android:maxLines="1" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -61,38 +65,25 @@
             <EditText
                 android:id="@+id/editTextPassword"
                 style="@style/modifiedEditText"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_gravity="center_horizontal"
+                android:autofillHints=""
                 android:background="@drawable/edit_text_bk"
                 android:drawableStart="@drawable/ic_action_lock"
                 android:drawableLeft="@drawable/ic_action_lock"
-                android:hint="@string/password_hint"
                 android:inputType="textPassword"
-                android:maxLines="1"
-                android:autofillHints="" />
+                android:maxLines="1" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                style="@style/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:text="@string/btn_login" />
         </com.google.android.material.textfield.TextInputLayout>
-
-        <androidx.appcompat.widget.SwitchCompat
-            android:id="@+id/rememberMe"
-            style="@style/viewParent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginTop="10dp"
-            android:checked="false"
-            android:text="@string/remember_me"
-            android:textColor="@color/mainGray"
-            android:textColorHighlight="#8BC34A"
-            android:textColorLink="#8BC34A"
-            android:textSize="@dimen/newsMoreTextSize"
-            android:theme="@style/SCBSwitch" />
-
-        <Button
-            android:id="@+id/btnLogin"
-            style="@style/loginButton"
-            android:layout_width="368dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/loginViewsMargin"
-            android:text="@string/btn_login" />
 
         <TextView
             style="@style/parent"
@@ -105,10 +96,23 @@
             android:textStyle="bold" />
 
 
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/rememberMe"
+            style="@style/viewParent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:text="@string/remember_me"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/newsMoreTextSize"
+            android:theme="@style/SCBSwitch" />
+
         <TextView
             android:id="@+id/passForgot"
             style="@style/viewParent"
-            android:layout_gravity="end"
+            android:layout_gravity="start"
             android:layout_marginTop="10dp"
             android:onClick="viewForgotPassword"
             android:text="@string/txtPassForgot"

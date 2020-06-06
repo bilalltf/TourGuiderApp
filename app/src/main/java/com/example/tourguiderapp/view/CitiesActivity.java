@@ -22,8 +22,6 @@ public class CitiesActivity extends AppCompatActivity implements NavigationView.
     NavigationView navigationView;
     ImageView menuIcon;
     LinearLayout contentView;
-    // variables
-    // static final float END_SCALE = 0.7f;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,7 +65,30 @@ public class CitiesActivity extends AppCompatActivity implements NavigationView.
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+
+        switch (menuItem.getItemId()) {
+
+            case R.id.nav_account:
+                Intent intent = new Intent(CitiesActivity.this, manageProfile.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
+                break;
+
+            case R.id.nav_plans:
+                Toast.makeText(this, "You clicked plans", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.nav_lang:
+                Toast.makeText(this, "You clicked settings", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.nav_wish_list:
+                Toast.makeText(this, "You clicked wish list", Toast.LENGTH_SHORT).show();
+                break;
+
+        }
+
         return true;
+
     }
 
 

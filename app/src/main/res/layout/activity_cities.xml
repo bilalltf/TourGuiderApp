@@ -8,7 +8,7 @@
     android:fitsSystemWindows="true"
     tools:context=".view.CitiesActivity"
     tools:openDrawer="start"
-    android:background="@color/main_color"
+    android:background="@drawable/start_bk"
     >
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
@@ -17,6 +17,7 @@
         android:layout_width="wrap_content"
         app:headerLayout="@layout/menu_header"
         app:menu="@menu/main_menu"
+
         />
 
 
@@ -33,12 +34,6 @@
             >
 
             <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/main_color" />
-
-            <ImageView
                 android:id="@+id/imgBtnMenu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -48,7 +43,7 @@
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
-                android:contentDescription="TODO"
+                android:contentDescription="@string/todo"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ic_main_menu"
@@ -62,7 +57,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="0dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="9dp"
                 android:focusableInTouchMode="false"
                 android:searchIcon="@drawable/ic_search" />
 
@@ -96,7 +91,7 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_below="@id/bar"
             android:layout_alignParentStart="true"
@@ -117,7 +112,7 @@
                 android:layout_alignParentTop="true"
 
                 android:layout_marginTop="25dp"
-                android:background="#ffffff">
+                android:background="#D9FFFFFF">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -155,8 +150,8 @@
                                     android:layout_below="@id/imgBtnNador"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
-                                    android:text="Nador"
-                                    android:textSize="24sp"
+                                    android:text="@string/nador"
+                                    android:textSize="20sp"
                                     app:fontFamily="@font/baloo" />
 
                                 <ImageView
@@ -164,7 +159,8 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="125dp"
                                     android:scaleType="centerCrop"
-                                    android:src="@drawable/nador" />
+                                    android:src="@drawable/nador"
+                                    tools:ignore="ContentDescription" />
                             </RelativeLayout>
                         </androidx.cardview.widget.CardView>
 
@@ -186,14 +182,15 @@
                                     android:layout_below="@id/imgBtnSaidia"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
-                                    android:text="Saidia"
-                                    android:textSize="24sp"
+                                    android:text="@string/saidia"
+                                    android:textSize="20sp"
                                     app:fontFamily="@font/baloo" />
 
                                 <ImageView
                                     android:id="@+id/imgBtnSaidia"
                                     android:layout_width="match_parent"
                                     android:layout_height="125dp"
+                                    android:contentDescription="@string/todo"
                                     android:scaleType="centerCrop" />
                             </RelativeLayout>
                         </androidx.cardview.widget.CardView>
@@ -228,14 +225,15 @@
                                     android:layout_below="@id/imgBtnTanger"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
-                                    android:text="Tanger"
-                                    android:textSize="24sp"
+                                    android:text="@string/tanger"
+                                    android:textSize="20sp"
                                     app:fontFamily="@font/baloo" />
 
                                 <ImageView
                                     android:id="@+id/imgBtnTanger"
                                     android:layout_width="match_parent"
                                     android:layout_height="125dp"
+                                    android:contentDescription="@string/todo"
                                     android:scaleType="centerCrop" />
                             </RelativeLayout>
                         </androidx.cardview.widget.CardView>
@@ -258,14 +256,15 @@
                                     android:layout_below="@id/imgBtnKesh"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
-                                    android:text="Marrakesh"
-                                    android:textSize="24sp"
+                                    android:text="@string/marrakesh"
+                                    android:textSize="20sp"
                                     app:fontFamily="@font/baloo" />
 
                                 <ImageView
                                     android:id="@+id/imgBtnKesh"
                                     android:layout_width="match_parent"
                                     android:layout_height="125dp"
+                                    android:contentDescription="@string/todo"
                                     android:scaleType="centerCrop" />
                             </RelativeLayout>
                         </androidx.cardview.widget.CardView>
@@ -299,8 +298,8 @@
                                     android:layout_below="@id/imgBtnTetouane"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
-                                    android:text="Tetouane"
-                                    android:textSize="24sp"
+                                    android:text="@string/tetouane"
+                                    android:textSize="20sp"
                                     app:fontFamily="@font/baloo" />
 
                                 <ImageView
@@ -331,8 +330,8 @@
                                     android:layout_below="@id/imgBtnElhouciema"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
-                                    android:text="Elhouciema"
-                                    android:textSize="24sp"
+                                    android:text="@string/elhouciema"
+                                    android:textSize="20sp"
                                     app:fontFamily="@font/baloo" />
 
                                 <ImageView

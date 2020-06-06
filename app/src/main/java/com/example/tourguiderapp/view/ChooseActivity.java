@@ -1,13 +1,11 @@
 package com.example.tourguiderapp.view;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.tourguiderapp.R;
 
@@ -19,6 +17,7 @@ public class ChooseActivity extends AppCompatActivity {
         setContentView(R.layout.activity_choose);
         listenLogin();
         listenRegister();
+        /*
         SharedPreferences preferences = getSharedPreferences("switchCompat",MODE_PRIVATE);
         String checked = preferences.getString("remember","");
         if(checked.equals("true")){
@@ -28,6 +27,7 @@ public class ChooseActivity extends AppCompatActivity {
         }else if(!checked.equals("false")){
             Toast.makeText(ChooseActivity.this, "Please Sing In.", Toast.LENGTH_SHORT).show();
         }
+        */
     }
 
     /**
@@ -54,15 +54,6 @@ public class ChooseActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }
-
-    /**
-     * Listen to the click on the arrow button to exit the application
-     */
-    public void clickExit(View v){
-        moveTaskToBack(true);
-        android.os.Process.killProcess(android.os.Process.myPid());
-        System.exit(1);
     }
 
     /**

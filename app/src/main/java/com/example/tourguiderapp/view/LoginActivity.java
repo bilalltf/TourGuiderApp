@@ -9,9 +9,11 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Toast;
+
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SwitchCompat;
+
 import com.example.tourguiderapp.R;
 import com.example.tourguiderapp.controller.ControlLogin;
 
@@ -26,25 +28,42 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         init();
+        editTextEmail.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus)
+                    editTextEmail.setHint("");
+                else
+                    editTextEmail.setHint(R.string.email_hint);
+            }
+        });
+        editTextPassword.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus)
+                    editTextPassword.setHint("");
+                else
+                    editTextPassword.setHint(R.string.password_hint);
+            }
+        });
     }
 
     /**
      * initialization of the links between the graphic components and the properties
      */
-    private void init(){
-        editTextEmail= findViewById(R.id.editTextEmail);
-        editTextPassword =findViewById(R.id.editTextPassword);
+    private void init() {
+        editTextEmail = findViewById(R.id.editTextEmail);
+        editTextPassword = findViewById(R.id.editTextPassword);
         switchCompat = findViewById(R.id.rememberMe);
-
+        editTextEmail.setHint(R.string.email_hint);
+        editTextPassword.setHint(R.string.password_hint);
 
 
         switchCompat.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if(buttonView.isChecked()){
-                    SharedPreferences preferences = getSharedPreferences("switchCompat",MODE_PRIVATE);
+                if (buttonView.isChecked()) {
+                    SharedPreferences preferences = getSharedPreferences("switchCompat", MODE_PRIVATE);
                     SharedPreferences.Editor editor = preferences.edit();
-                    editor.putString("remember","true");
+                    editor.putString("remember", "true");
                     editor.apply();
                     Toast.makeText(LoginActivity.this, "Checked", Toast.LENGTH_SHORT).show();
                 }else if(!switchCompat.isChecked()){

@@ -2,33 +2,30 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
 
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     style="@style/loginParent"
+    android:background="@drawable/start_bk"
+    android:orientation="vertical"
     tools:context=".view.RegisterActivity">
+
     <ScrollView style="@style/parent">
-        <RelativeLayout
-            style="@style/parent">
+
+        <RelativeLayout style="@style/parent">
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:layout_alignParentTop="true"
-                android:weightSum="12"
-                android:baselineAligned="false">
+                android:layout_height="130dp"
+                android:layout_weight="3"
+                android:background="@drawable/start_bk"
+                android:orientation="vertical"
+                tools:ignore="InefficientWeight,UselessParent">
 
-                <LinearLayout
-                    android:layout_height="130dp"
-                    android:layout_width="wrap_content"
-                    android:layout_weight="3"
-                    android:background="@drawable/login_shape_bk"
-                    android:orientation="vertical"
-                    tools:ignore="InefficientWeight,UselessParent">
-
-                    <ImageView
-                        android:id="@+id/imgView"
-                        style="@style/parent"
-                        android:background="@drawable/ic_login_bk"
-                        android:contentDescription="@string/login_background" />
-                </LinearLayout>
+                <ImageView
+                    android:id="@+id/imgView"
+                    style="@style/parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_login_bk"
+                    android:contentDescription="@string/login_background" />
             </LinearLayout>
 
             <LinearLayout
@@ -36,36 +33,27 @@
                 android:layout_height="match_parent"
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="12dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="65dp"
                 android:layout_marginRight="12dp"
                 android:orientation="vertical">
-
-                <TextView
-                    style="@style/headerText"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="20dp"
-                    android:gravity="center"
-                    android:text="@string/tour_guider"
-                    android:textAllCaps="true"
-
-                    android:textColor="#707070"
-                    android:textSize="30sp"
-                    android:textStyle="bold"/>
 
                 <include layout="@layout/layout_register" />
 
             </LinearLayout>
+
             <ImageButton
                 android:id="@+id/btnBackRegister"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="13dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
                 android:layout_gravity="left"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/ic_action_arrow"
-                android:layout_marginStart="5dp"
-                tools:ignore="RtlHardcoded"
-                android:contentDescription="@string/todo" />
+                android:contentDescription="@string/todo"
+                tools:ignore="RtlHardcoded" />
 
         </RelativeLayout>
     </ScrollView>

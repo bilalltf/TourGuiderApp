@@ -6,7 +6,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.tourguiderapp.R;
 import com.example.tourguiderapp.controller.ControlRegister;
 
@@ -26,22 +28,59 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         init();
+        txtUserName.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus)
+                    txtUserName.setHint("");
+                else
+                    txtUserName.setHint(R.string.hint_name);
+            }
+        });
+        txtEmail.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus)
+                    txtEmail.setHint("");
+                else
+                    txtEmail.setHint(R.string.email_hint);
+            }
+        });
+        txtPassword.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus)
+                    txtPassword.setHint("");
+                else
+                    txtPassword.setHint(R.string.password_hint);
+            }
+        });
+        txtConfirmPassword.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus)
+                    txtConfirmPassword.setHint("");
+                else
+                    txtConfirmPassword.setHint(R.string.confirm_password_hint);
+            }
+        });
+
     }
 
 
     /**
      * initialization of connection with graphic objects
      */
-    private void init(){
+    private void init() {
 
         //references to button and other controls on the layout
 
         txtUserName = findViewById(R.id.txtUserName);
-        txtEmail= findViewById(R.id.txtEmail);
+        txtEmail = findViewById(R.id.txtEmail);
         txtPassword = findViewById(R.id.txtPassword);
         txtConfirmPassword = findViewById(R.id.txtConfirmPassword);
         btnRegister = findViewById(R.id.btnRegister);
         this.controlRegister = ControlRegister.getInstance(this);
+        txtUserName.setHint(R.string.hint_name);
+        txtPassword.setHint(R.string.password_hint);
+        txtEmail.setHint(R.string.email_hint);
+        txtConfirmPassword.setHint(R.string.confirm_password_hint);
 
         listenRegister();
         listenBackChooseRegister();

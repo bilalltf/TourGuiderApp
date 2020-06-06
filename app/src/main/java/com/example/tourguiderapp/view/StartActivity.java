@@ -1,10 +1,10 @@
 package com.example.tourguiderapp.view;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.tourguiderapp.R;
 
@@ -20,6 +20,6 @@ public class StartActivity extends AppCompatActivity {
                 startActivity(new Intent(StartActivity.this, ChooseActivity.class));
                 finish();
             }
-        },3000);
+        }, 1000);
     }
 }
